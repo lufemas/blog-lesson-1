@@ -1,0 +1,290 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    margin: 2.2em;
+}
+
+header {
+    /* background-image: url('../img/wash.png');why does this one not work?? */
+
+
+    background-image: url('https://source.unsplash.com/1600x900/?cleaning');
+    opacity: 5em; 
+    
+    /* in regards to opacity/transperancy wanted to make the background transparent but ended up
+    also making the button transparent which I did not want to make.
+    And how do I make the button move down instead of hovering in between?*/
+}
+
+nav{
+    text-align: end;
+}
+
+nav ul {
+    margin-bottom: 10em;
+}
+/* 
+nav li {
+    background-color: blue;
+    color: white;
+    border-radius: 2em;
+    display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+    padding: 10px; /*if i have a more padding e.g 1-2em then the */
+    /* margin: 0.2em;
+}  */
+nav li {
+    background-color: blue;
+    color: white;
+    border-radius: 2em;
+    /* display: inline; */
+    margin: 1em;
+    padding: .0.5em; /*if i have a more padding e.g 1-2em then the */
+    margin-top: 5em;
+    margin-bottom: 10em;
+} 
+nav a {
+    text-decoration: none;
+    text-align: center; 
+}
+
+.logo {
+    margin-top: 0.5em;
+    width: 5%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+}
+footer {
+    margin-top: 50px; /* how do I create gap between main and footer? */
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media only screen and (min-width: 40em) {
+    nav li { nav li {
+        background-color: pink;
+        
+} 
+    }
+
+}
+
+@media only screen and (max-width: 40em) {
+    .container{ 
+        width: 100%;
+    background-color: lightblue;
+    }
+
+
+
+/*
+Media queries take reponsiveness to an entirely new level. They allow you to apply different CSS styles in repsonse to the
+enviroment,such as the media on which the webpage is being viewed (screen or print) or the size of the viewport. Media queries 
+can apply styles to move, hide, or display content on the page, change text or colors, or add styles to make the page easier to 
+read in particular situation. If you resize a webpage and see the navigation system change or see multicolumn layout reduce to 
+one column as the viewport narrows to the size of a phone, you know that media queries are working behind the scenes to restyle 
+the webpage in response to the viewport size. Media qyeries can be embedded in the link rag that connect an external  style sheet
+to an HTMLfile, or they can be inserted in the external style sheet itself. The foloowing code provides a basic example of media 
+query into the link tag of an HTML link.
+The media attribute is used to detrmine which stylesheet should be applied. In this example the styles.css style sheet found in
+the css folder will be applied if teh webpage is printed. This is a common technique to allow developers to style with rich colors 
+and images on the screen, but style with black text on a white background when the same webpage is printed.
+
+Breakpoints
+
+Media queries can do more than detect the current media type. They can alos determine the size of the viewport, the viewable 
+portion of the webpage. To understand the code and syntax of how a media query detects viewport size, you set a breakpoint 
+(sometimes called threshold), the point at which you want the webpage to change. The breakpoint is where you apply different
+styles to the webpage to cause it to change in a way that make it easier to read and navigate for a particular situation, such as 
+user viewing the webpage on a phone.
+
+
+
+Device                                   minimum viewport width         maxium viewport width
+Small smartphones                           320px                       480px
+Tablets and larger smartphones              481px                       768px
+Tablets in landscape orientation            769px                       1279px
+Large desktop monitors                      1280px                       NA
+
+
+
+
+Media query Expressions
+
+A media query can use a logical expression to test whether a viewport has reched a particular breakpoint. The logical expression
+included the name of a media query feature, a characteristic of the enviroment, and a breakpoint calue to be tested. If the 
+logical expression evaluates to "true", the media query applies the styles that follow. Following is an example of a media query 
+that includes a media type and a logical expression. 
+
+Adding Media Queries to an External Style 
+
+The style sheet for the Forward FItness CLub website, style.css, contains several style rules for a mobile display. In a mobile 
+first strategy, you list the mobile styles first, because these are the default styles. Next, you use media queries to add styles 
+for larger viewports,progressing from tablet to desktop (which includes laptops). Styles created for the smaller viewports apply
+to larger viewports by default. To modify the  appearance of an element for a larger viewport, create a media query for the larger 
+viewport, and then create a new style. For example, the mobile navigation links in the Forward Fitness Club website appear as a
+column of vertical buttons. To change this appearance for a tablet viewport, create a new style rule for the navigation list items
+and use the display property with a value of inline to display the link in a single line, as shown in the following example:
+
+@media only and (min-width: 320px) {
+    nav li{display: inline}
+}
+
+This new style rule applies only to viewports with minimum screen width of 320 pixels. As you continue the responsive design process
+and creates media queries for progressively larger viewports, review the existing style rules for small view ports to know
+the default settings.
+
+Designing for Tablet viewports
+
+@media only screen and (min-width:481px){
+
+}
+
+*/
+
+
+/* body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    margin: 2.2em;
+}
+
+header {
+    background-image: url(img/wash.png);/*why does this one not work?? *//*
+    background-image: url(https://source.unsplash.com/1600x900/?cleaning);
+    opacity: 5em; 
+    
+    /* in regards to opacity/transperancy wanted to make the background transparent but ended up
+    also making the button transparent which I did not want to make.
+    And how do I make the button move down instead of hovering in between?*/
+/*}
+
+nav{
+    text-align: end;
+}
+
+nav ul {
+    margin-bottom: 10em;
+}
+
+nav li {
+    background-color: blue;
+    color: white;
+    border-radius: 2em;
+    display: inline;
+    margin: 1em;
+    padding: .0.5em; /*if i have a more padding e.g 1-2em then the *//*
+    margin-top: 5em;
+    margin-bottom: 10em;
+} 
+
+nav a {
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 0.5em;
+    width: 5%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+}
+footer {
+    margin-top: 50px; /* how do I create gap between main and footer? *//*
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media only screen and (min-width: 320px) {
+    nav li { dispaly: inline}
+}
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
